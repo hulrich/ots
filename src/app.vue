@@ -146,12 +146,6 @@
           </b-card>
         </b-col>
       </b-row>
-
-      <b-row class="mt-5">
-        <b-col class="footer">
-          {{ $t('text-powered-by') }} <a href="https://github.com/Luzifer/ots"><i class="fab fa-github" /> Luzifer/OTS</a> {{ $root.version }}
-        </b-col>
-      </b-row>
     </b-container>
   </div>
 </template>
