@@ -3,7 +3,7 @@
 ![](https://badges.fyi/github/downloads/Luzifer/ots)
 [![Go Report Card](https://goreportcard.com/badge/github.com/Luzifer/ots)](https://goreportcard.com/report/github.com/Luzifer/ots)
 
-# Luzifer / OTS
+# OTS
 
 `ots` is a one-time-secret sharing platform. The secret is encrypted with a symmetric 256bit AES encryption in the browser before being sent to the server. Afterwards an URL containing the ID of the secret and the password is generated. The password is never sent to the server so the server will never be able to decrypt the secrets it delivers with a reasonable effort. Also the secret is immediately deleted on the first read.
 
@@ -12,6 +12,20 @@
 - AES 256bit encryption
 - Server does never get the password
 - Secret is deleted on first read
+
+## Make
+export GOPATH=/usr/lib/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+make
+
+
+### Docker
+docker ps -a
+docker container ls –a
+docker container stop XYZ
+
+docker build -t hulrich/ots-app .
+docker run -d -p3000:3000 hulrich/ots-app
 
 ## Setup
 
