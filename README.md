@@ -14,10 +14,10 @@
 - Secret is deleted on first read
 
 ## Make
+### VUE
 export GOPATH=/usr/lib/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 make
-
 
 ### Docker
 docker ps -a
